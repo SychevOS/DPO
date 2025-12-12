@@ -3,169 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
-    <link rel="png" src="assets/icons/IC_coffee.png" type="png">
+    <title>Кофе</title>
+    <link rel="icon" href="assets/icons/IC_coffee.png" type="image/png">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <h1>Великофепные напитки</h1>
-        <img src="LOGO.png" alt="">
+    <h1>Великофепные напитки</h1>
+    <img src="LOGO.png" alt="">
+    <img src="assets/icons/shopping-cart-3.png" alt="" style="background-color: black; padding: 5px; border-radius: 4px;">        
+    <header class="header" id="section0">
         <img src="assets/img/Баннер.png" alt="">
-        <img src="assets/icons/shopping-cart-3.png" alt="" style="background-color: black; padding: 5px; border-radius: 4px;">        <nav>
-            <ul>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li> 
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active"><a class="nav__link" href="#section0">Блок 0</a></li>
+                <li class="nav__item nav__item--active"><a class="nav__link" href="#section1">Блок 1</a></li>
+                <li class="nav__item nav__item--active"><a class="nav__link" href="#section2">Блок 2</a></li> 
+                <li class="nav__item nav__item--active"><a class="nav__link" href="#section3">Блок 3</a></li>
+                <li class="nav__item nav__item--active"><a class="nav__link" href="#section4">Блок 4</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="cards" id="section1">
             <h2>Заголовок уровня 2</h2>
-            <div>
-                <article>
-                    <img src="assets/icons/IC (1).png" alt="">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>
-                        Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что экономическая повестка сегодняшнего дня создаёт предпосылки для вывода текущих активов!
-                    </p>
-                </article>
-
-                <article>
-                    <img src="assets/icons/ic.png" alt="">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>
-                        Вот вам яркий пример современных тенденций&nbsp;&mdash; глубокий уровень погружения не&nbsp;даёт нам иного выбора, кроме определения поставленных обществом задач.
-                    </p>
-                </article>
-
-                <article>
-                    <img src="assets/icons/IC (2).png" alt="">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>
-                        Внезапно, представители современных социальных резервов лишь добавляют фракционных разногласий и&nbsp;объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали.
-                    </p>
-                </article>
-
-                <article>
-                    <img src="assets/icons/IC (3).png" alt="">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>
-                        В&nbsp;частности, постоянный количественный рост и&nbsp;сфера нашей активности однозначно фиксирует необходимость первоочередных требований.
-                    </p>
-                </article>
+            <div class="card card--featured">
+                <img src="assets/icons/IC(1).png" alt="">
+                <h3>Заголовок уровня 3</h3>
+                <p class="card__text">
+                    Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что экономическая повестка сегодняшнего дня создаёт предпосылки для вывода текущих активов!
+                </p>
+            </div>
+            <div class="card card--featured">
+                <img src="assets/icons/ic.png" alt="">
+                <h3>Заголовок уровня 3</h3>
+                <p class="card__text">
+                    Вот вам яркий пример современных тенденций&nbsp;&mdash; глубокий уровень погружения не&nbsp;даёт нам иного выбора, кроме определения поставленных обществом задач.
+                </p>
+            </div>
+            <div class="card card--featured">
+                <img src="assets/icons/IC(2).png" alt="">
+                <h3>Заголовок уровня 3</h3>
+                <p class="card__text">
+                    Внезапно, представители современных социальных резервов лишь добавляют фракционных разногласий и&nbsp;объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали.
+                </p>
+            </div>
+            <div class="card card--featured">
+                <img src="assets/icons/IC(3).png" alt="">
+                <h3>Заголовок уровня 3</h3>
+                <p class="card__text">
+                    В&nbsp;частности, постоянный количественный рост и&nbsp;сфера нашей активности однозначно фиксирует необходимость первоочередных требований.
+                </p>
             </div>
         </section>
 
-        <section>
+        <section class="cards" id="section2">
             <h2>Заголовок уровня 2</h2>
-            <div>
-                <article>
-                    <img src="assets/img/IMAGE.png" alt="">
-                    <p>99.000</p>
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Следует отметить, что понимание сути ресурсосберегающих технологий требует анализа соответствующих условий активизации.</p>
-                    <button>КУПИТЬ СЕЙЧАС</button>
-                    <button>Подробнее</button>
-                </article>
-
-                <article>
-                    <p>85.000</p>
-                    <img src="assets/img/IMAGE (2).png" alt="">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Учитывая ключевые сценарии поведения, синтетическое тестирование предопределяет высокую востребованность стандартных подходов.</p>
-                    <button>КУПИТЬ СЕЙЧАС</button>
-                    <button>Подробнее</button>
-                </article>
+            <div class="card card--featured">
+                <img src="assets/img/IMAGE.png" alt="">
+                <p>99.000</p>
+                <h3>Заголовок уровня 3</h3>
+                <p class="card__text">Следует отметить, что понимание сути ресурсосберегающих технологий требует анализа соответствующих условий активизации.</p>
+                <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
+                <button class="button button--active">Подробнее</button>
             </div>
-            <div>
-                <article>
-                    <p>139.000</p>
-                    <img src="assets/img/image (1).png" alt="">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Также как реализация намеченных плановых заданий представляет собой интересный эксперимент проверки благоприятных перспектив.</p>
-                    <button>КУПИТЬ СЕЙЧАС</button>
-                    <button>Подробнее</button>
-                </article>
-                
-                <article>
-                    <p>75.000</p>
-                    <img src="assets/img/IMAGE (3).png" alt="">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Имеется спорная точка зрения, гласящая примерно следующее: предприниматели в&nbsp;сети интернет преданы социально-демократической анафеме.</p>
-                    <button>КУПИТЬ СЕЙЧАС</button>
-                    <button>Подробнее</button>
-                </article>
+            <div class="card card--featured">
+                <p>85.000</p>
+                <img src="assets/img/IMAGE(2).png" alt="">
+                <h3>Заголовок уровня 3</h3>
+                <p class="card__text">Учитывая ключевые сценарии поведения, синтетическое тестирование предопределяет высокую востребованность стандартных подходов.</p>
+                <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
+                <button class="button button--active">Подробнее</button>
             </div>
-            <button>Дальше</button>
+            <div class="card card--featured">
+                <p>139.000</p>
+                <img src="assets/img/image(1).png" alt="">
+                <h3>Заголовок уровня 3</h3>
+                <p class="card__text">Также как реализация намеченных плановых заданий представляет собой интересный эксперимент проверки благоприятных перспектив.</p>
+                <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
+                <button class="button button--active">Подробнее</button>
+            </div>
+            <div class="card card--featured">
+                <p>75.000</p>
+                <img src="assets/img/IMAGE(3).png" alt="">
+                <h3>Заголовок уровня 3</h3>
+                <p class="card__text">Имеется спорная точка зрения, гласящая примерно следующее: предприниматели в&nbsp;сети интернет преданы социально-демократической анафеме.</p>
+                <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
+                <button class="button button--active">Подробнее</button>
+            </div>
+            <button class="button">Дальше</button>
         </section>
 
-        <section>
+        <section class="cards" id="section3">
             <h2>Заголовок уровня 2</h2>
-            <div>
+            <div class="card">
                 <img src="assets/img/pr-0018-r.png" alt="">
                 <p>285.000</p>
                 <h3>Заголовок уровня 3</h3>
-                <p>
+                <p class="card__text">
                     С&nbsp;другой стороны, дальнейшее развитие различных форм деятельности выявляет срочную 
                     потребность как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений. 
                     И&nbsp;нет сомнений, что непосредственные участники технического прогресса неоднозначны 
                     и&nbsp;будут представлены в&nbsp;исключительно положительном свете.
                 </p>
-                <article>
+                <article class="card card--featured">
                     <img src="assets/icons/IC_coffee.png" alt="">
                     <h4>Вид зерна</h4>
-                    <p>Смесь Fine Robusta</p>
+                    <p class="card__text">Смесь Fine Robusta</p>
                 </article>
 
-                <article>
+                <article class="card card--featured">
                     <img src="assets/icons/IC_Mountain.png" alt="">
                     <h4>Высота</h4>
-                    <p>700 - 800м</p>
+                    <p class="card__text">700 - 800м</p>
                 </article>
-                <button>КУПИТЬ СЕЙЧАС</button>
-                <button>Подробнее</button>
+                <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
+                <button class="button button--active">Подробнее</button>
             </div>
         </section>
 
-        <section>
+        <section class="cards" id="section4">
             <h2>Заголовок уровня 2</h2>
-            <div>
-                <article>
-                    <img src="assets/img/image (6).png" alt="">
-                    <p>147.000</p>
-                    <s>155.000</s>
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Внезапно, независимые государства могут быть в&nbsp;равной степени предоставлены сами себе.</p>
-                    <button>КУПИТЬ СЕЙЧАС</button>
-                    <button>Подробнее</button>
-                </article>
-
-                <article>
-                    <img src="assets/img/image (7).png" alt="">
-                    <p>156.000</p>
-                    <s>165.000</s>
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Господа, высококачественный прототип будущего проекта предопределяет высокую востребованность прогресса профессионального сообщества.</p>
-                    <button>КУПИТЬ СЕЙЧАС</button>
-                    <button>Подробнее</button>
-                </article>
-
-                <article>
-                    <img src="assets/img/image (8).png" alt="">
-                    <p>260.000</p>
-                    <s>275.000</s>
-                    <s></s>
-                    <h3>Заголовок уровня 3</h3>
-                    <p>А&nbsp;ещё реплицированные с&nbsp;зарубежных источников, современные исследования объединены в&nbsp;целые кластеры себе подобных.</p>
-                    <button>КУПИТЬ СЕЙЧАС</button>
-                    <button>Подробнее</button>
-                </article>
-                <button>Дальше</button>
+            <div class="card card--featured">
+                <img src="assets/img/image(6).png" alt="">
+                <p>147.000</p>
+                <s>155.000</s>
+                <h3>Заголовок уровня 3</h3>
+                <p class="card__text">Внезапно, независимые государства могут быть в&nbsp;равной степени предоставлены сами себе.</p>
+                <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
+                <button class="button button--active">Подробнее</button>
             </div>
+            <div class="card card--featured"></div>
+                <img src="assets/img/image(7).png" alt="">
+                <p>156.000</p>
+                <s>165.000</s>
+                <h3>Заголовок уровня 3</h3>
+                <p class="card__text">Господа, высококачественный прототип будущего проекта предопределяет высокую востребованность прогресса профессионального сообщества.</p>
+                <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
+                <button class="button button--active">Подробнее</button>
+            </div>
+            <div class="card card--featured"></div>
+                <img src="assets/img/image(8).png" alt="">
+                <p>260.000</p>
+                <s>275.000</s>
+                <s></s>
+                <h3>Заголовок уровня 3</h3>
+                <p class="card__text">А&nbsp;ещё реплицированные с&nbsp;зарубежных источников, современные исследования объединены в&nbsp;целые кластеры себе подобных.</p>
+                <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
+                <button class="button button--active">Подробнее</button>
+            </div>
+            <button class="button">Дальше</button>
         </section>
     </main>
     
