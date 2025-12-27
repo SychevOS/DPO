@@ -43,32 +43,44 @@ table {
     border-spacing: 0;
 }
 
+main{
+    background-color: #edf0f5;
+}
+
 a {
     text-decoration: none;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background: #ffffff;
+    justify-content: center;
+    padding: 1%;
+    background: #f9f5e8;
 }
+
 .nav__list {
     display: flex;
     gap: 1rem;
     list-style: none;
+    background-color: #415167;
+    padding: 4rem;
+    flex-wrap: wrap;
 }
 .nav__item--active .nav__link {
-    color: #2c5530;
+    color: #ffffff;
 }
 .card {
+    display: grid;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+    justify-items: center;
+    
 }
 .card--featured {
     background: #f8f9fa;
     border-color: #2c5530;
+    text-align: center;
 }
 .nav__item:hover {
     color: #000000;
@@ -89,4 +101,62 @@ header {
     border-radius: 5px;
     color: red;
     transform: translateY(5px);
+}
+.test{
+    background-color: #415167
+}
+.header__logo{
+    padding-right: 100px;
+    padding-top: 50%;
+}
+.topic{
+    text-align: center;
+}
+.cards1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.cards2{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+.cards4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+text {
+ color: navy;
+ font-size: 18px;
+}
+/* Ноутбуки (меньше 1200px) */
+@media (max-width: 1199px) {
+ .text {
+ color: darkblue;
+ }
+}
+/* Планшеты (меньше 992px) */
+@media (max-width: 991px) {
+ .text {
+ color: blue;
+ }
+}
+/* Мобильные в альбомной ориентации (меньше 768px) */
+@media (max-width: 767px) {
+ .text {
+ color: royalblue;
+ }
+}
+/* Мобильные (меньше 576px) */
+@media (max-width: 575px) {
+ .text {
+ color: dodgerblue;
+ font-size: 16px;
+ }
+}
+/* Очень маленькие экраны (меньше 400px) */
+@media (max-width: 399px) {
+ .text {
+ color: lightblue;
+ font-size: 14px;
+ }
 }
