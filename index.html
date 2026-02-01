@@ -5,37 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кофе</title>
     <link rel="icon" href="assets/icons/IC_coffee.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 1024px)">
 </head>
 <body>
-    <div class="topic" style="padding-bottom: 30px;">
-        <h1 style="font-size: 36px;">Заголовок уровня 1</h1>
-    </div>        
-    <header class="header" id="section0">
-        <section class="section__logo">
-            <img class="header__logo" src="LOGO.png" alt="">
-        </section>
-        <section class="section__banner">
-            <img src="assets/img/Баннер.png" alt="">
-        </section>
-        <section class="test">
-            <img src="assets/icons/shopping-cart-3.png" alt="" style="background-color: black; padding: 5px; border-radius: 4px;">
-            <nav class="header__nav nav">
-                <ul class="nav__list">
-                    <li class="nav__item nav__item--active"><a class="nav__link" href="#section0">Блок№0</a></li>
-                    <li class="nav__item nav__item--active"><a class="nav__link" href="#section1">Блок№1</a></li>
-                    <li class="nav__item nav__item--active"><a class="nav__link" href="#section2">Блок№2</a></li> 
-                    <li class="nav__item nav__item--active"><a class="nav__link" href="#section3">Блок№3</a></li>
-                    <li class="nav__item nav__item--active"><a class="nav__link" href="#section4">Блок№4</a></li>
-                </ul>
-            </nav>
-        </section>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <img src="LOGO.png" alt="Логотип кофейни" width="120" height="40">
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+                
+                <nav class="nav" id="mainNav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#section0" class="nav__link active">Блок№0</a></li>
+                        <li class="nav__item"><a href="#section1" class="nav__link">Блок№1</a></li>
+                        <li class="nav__item"><a href="#section2" class="nav__link">Блок№2</a></li>
+                        <li class="nav__item"><a href="#section3" class="nav__link">Блок№3</a></li>
+                        <li class="nav__item"><a href="#section4" class="nav__link">Блок№4</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header__actions">
+                    <img src="assets/icons/shopping-cart-3.png" alt="Корзина" class="cart-icon">
+                    <button class="btn btn--primary header__cta">Заказать</button>
+                </div>
+            </div>
+        </div>
     </header>
 
+    <section class="banner-section" id="section0">
+        <img src="assets/img/Баннер.png" alt="Баннер кофейни">
+    </section>
+
     <main>
-        <div class="topic" style=" padding-bottom: 30px;">
+
+        <div class="topic" style="padding-bottom: 30px;">
             <h2 style="font-size: 28px;">Заголовок уровня 2</h2>
         </div>
+        
         <section class="cards1" id="section1">
             <div class="card card--featured">
                 <img src="assets/icons/IC(1).png" alt="">
@@ -75,9 +90,10 @@
             </div>
         </section>
 
-        <div class="topic" style=" padding-bottom: 30px;">
+        <div class="topic" style="padding-bottom: 30px;">
             <h2 style="font-size: 28px;">Заголовок уровня 2</h2>
         </div>
+        
         <section class="cards2" id="section2">
             <div class="card card--featured">
                 <p>99.000</p>
@@ -122,7 +138,7 @@
         </section>
 
         <section class="cards" id="section3">
-            <div class="topic" style=" padding-bottom: 30px;">
+            <div class="topic" style="padding-bottom: 30px;">
                 <h2 style="font-size: 28px;">Заголовок уровня 2</h2>
             </div>
             <div class="card">
@@ -152,55 +168,62 @@
                 <button class="button button--active">Подробнее</button>
             </div>
         </section>
-        <div class="topic" style=" padding-bottom: 30px;">
+        
+        <div class="topic" style="padding-bottom: 30px;">
             <h2 style="font-size: 28px;">Заголовок уровня 2</h2>
         </div>
+        
         <section class="cards4" id="section4">
-        <div class="card card--featured">
-            <img src="assets/img/image(6).png" alt="">
-            <p>147.000</p>
-            <s>155.000</s>
-            <div class="topic">
-                <h3>Заголовок уровня 3</h3>
+            <div class="card card--featured">
+                <img src="assets/img/image(6).png" alt="">
+                <p>147.000</p>
+                <s>155.000</s>
+                <div class="topic">
+                    <h3>Заголовок уровня 3</h3>
+                </div>
+                <p class="card__text">Внезапно, независимые государства могут быть в&nbsp;равной степени предоставлены сами себе.</p>
+                <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
+                <button class="button button--active">Подробнее</button>
             </div>
-            <p class="card__text">Внезапно, независимые государства могут быть в&nbsp;равной степени предоставлены сами себе.</p>
-            <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
-            <button class="button button--active">Подробнее</button>
-        </div>
-    
-        <div class="card card--featured">
-            <img src="assets/img/image(7).png" alt="">
-            <p>156.000</p>
-            <s>165.000</s>
-            <div class="topic">
-                <h3>Заголовок уровня 3</h3>
+        
+            <div class="card card--featured">
+                <img src="assets/img/image(7).png" alt="">
+                <p>156.000</p>
+                <s>165.000</s>
+                <div class="topic">
+                    <h3>Заголовок уровня 3</h3>
+                </div>
+                <p class="card__text">Господа, высококачественный прототип будущего проекта предопределяет высокую востребованность прогресса профессионального сообщества.</p>
+                <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
+                <button class="button button--active">Подробнее</button>
             </div>
-            <p class="card__text">Господа, высококачественный прототип будущего проекта предопределяет высокую востребованность прогресса профессионального сообщества.</p>
-            <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
-            <button class="button button--active">Подробнее</button>
-        </div>
-    
-        <div class="card card--featured">
-            <img src="assets/img/image(8).png" alt="">
-            <p>260.000</p>
-            <s>275.000</s>
-            <div class="topic">
-                <h3>Заголовок уровня 3</h3>
+        
+            <div class="card card--featured">
+                <img src="assets/img/image(8).png" alt="">
+                <p>260.000</p>
+                <s>275.000</s>
+                <div class="topic">
+                    <h3>Заголовок уровня 3</h3>
+                </div>
+                <p class="card__text">А&nbsp;ещё реплицированные с&nbsp;зарубежных источников, современные исследования объединены в&nbsp;целые кластеры себе подобных.</p>
+                <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
+                <button class="button button--active">Подробнее</button>
             </div>
-            <p class="card__text">А&nbsp;ещё реплицированные с&nbsp;зарубежных источников, современные исследования объединены в&nbsp;целые кластеры себе подобных.</p>
-            <button class="button button--active">КУПИТЬ СЕЙЧАС</button>
-            <button class="button button--active">Подробнее</button>
-        </div>
-    </section>
+        </section>
     </main>
+    
     <footer>
         <p> 
             Господа, семантический разбор внешних противодействий является качественно новой ступенью прогресса 
-профессионального сообщества. Для современного мира экономическая повестка сегодняшнего дня предполагает 
-независимые способы реализации первоочередных требований. Но&nbsp;сторонники тоталитаризма в&nbsp;науке освещают 
-чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, своевременно 
-верифицированы.
+            профессионального сообщества. Для современного мира экономическая повестка сегодняшнего дня предполагает 
+            независимые способы реализации первоочередных требований. Но&nbsp;сторонники тоталитаризма в&nbsp;науке освещают 
+            чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, своевременно 
+            верифицированы.
         </p>
     </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
